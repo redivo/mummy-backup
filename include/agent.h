@@ -1,25 +1,25 @@
 /**************************************************************************************************/
 /**
 * \file
-* \brief Client agent implementation
+* \brief Generic agent implementation
 */
 /**************************************************************************************************/
 
-#ifndef __INCLUDE_CLIENT_H__
-#define __INCLUDE_CLIENT_H__
+#ifndef __INCUDE_AGENT_H__
+#define __INCUDE_AGENT_H__
 
+#include <stdint.h>
 #include "defines.h"
 
 /**************************************************************************************************/
 
 /**
- * \brief  Run a client instance
- * \param  socket  Opened socket
+ * \brief  Run agent instance
  * \param  config  Agent configuration
  * \return MUMMY_ERR_NONE on success, error code otherwise.
  */
-mummy_err_t run_client(int socket, mummy_agent_config_t config);
+mummy_err_t run_agent(mummy_agent_config_t config);
 
 /**************************************************************************************************/
 
-#endif /* __INCLUDE_CLIENT_H__ */
+#endif /* __INCUDE_AGENT_H__ */
