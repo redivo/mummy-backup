@@ -1,16 +1,14 @@
 /**************************************************************************************************/
 /**
 * \file
-* \brief Main Mummy Backup file
+* \brief Tests for main.c
 */
 /**************************************************************************************************/
 
-#include <stdio.h>
-#include "agent.h"
+#include <gtest/gtest.h>
 
 /**************************************************************************************************/
 
-int main(int argc, char* argv[])
+TEST(MainHelp, SingleHelp)
 {
-    return init_agent(argc, argv);
 }

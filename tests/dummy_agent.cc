@@ -1,16 +1,21 @@
 /**************************************************************************************************/
 /**
 * \file
-* \brief Main Mummy Backup file
+* \brief Dummy implementation for agent
 */
 /**************************************************************************************************/
 
 #include <stdio.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+
 #include "agent.h"
+#include "client.h"
+#include "server.h"
 
 /**************************************************************************************************/
 
-int main(int argc, char* argv[])
+mummy_err_t run_agent(mummy_agent_config_t config)
 {
-    return init_agent(argc, argv);
+return MUMMY_ERR_NONE;
 }
